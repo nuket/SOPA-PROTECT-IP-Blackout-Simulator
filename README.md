@@ -13,7 +13,7 @@ Send a letter to your Congressman or Senator:
 
 **Requirements to use this:**
 
-> Zepto or jQuery, loaded before this script.
+> [Zepto](http://zeptojs.com/) or [jQuery](http://jquery.com/), loaded before this script.
 
 **Styling information for users:**
 
