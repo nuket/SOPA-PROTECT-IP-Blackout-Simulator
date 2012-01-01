@@ -7,7 +7,8 @@ This is a simple client-side Javascript function that shows what SOPA and PROTEC
 > http://en.wikipedia.org/wiki/SOPA  
 > http://en.wikipedia.org/wiki/PROTECT_IP_Act  
 
-Send a letter to your Congressman or Senator:  
+Send a letter to your Congressman or Senator:
+
 > https://action.eff.org/o/9042/p/dia/action/public/?action_KEY=8173
 
 **Requirements to use this:**
