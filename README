@@ -7,27 +7,22 @@ This is what SOPA and PROTECT-IP will make the Internet look like.
 http://en.wikipedia.org/wiki/SOPA
 http://en.wikipedia.org/wiki/PROTECT_IP_Act
 
-**Requirements to use this**
+Requirements to use this:
 
-Zepto or jQuery, loaded before this script.
+   Zepto or jQuery, loaded before this script.
 
-**Styling information for users**
+Styling information for users:
 
 div.blackoutOverlay { background-color: #000; color: #fff; z-index: 1000; opacity: 1; }
 
->
->   Mutable: background-color, color, z-index, opacity
-> Immutable: position, overflow
->
+   Mutable: background-color, color, z-index, opacity
+ Immutable: position, overflow
 
 div.blackoutOverlay a { color: red; }
 
->
->    Mutable: all CSS properties (though you probably don't want to mess with anything other
->             than the color and pseudo-classes)
+   Mutable: all CSS properties (though you probably don't want to mess with anything other
+            than the color and pseudo-classes)
 
-**Exempting certain DIVs from being blacked out**
+Exempting certain DIVs from being blacked out
 
->
-> Make sure they have the CSS class "blackoutExempt" set.
->
+   Make sure they have the CSS class "blackoutExempt" set.
