@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>SOPA/PROTECT-IP Blackout Simulator</title>
+<style>
+	div#nonInfringing { width: 360px; height: 240px; background-color: blue;   position: absolute; top:  50px; left: 450px; padding: 1em; }
+	div#userGenerated { width: 320px; height: 320px; background-color: red;    position: absolute; top: 190px; left:  50px; margin: 0.5em; padding: 0.5em; }
+	div#innocent      { width: 680px; height: 220px; background-color: green;  position: absolute; top: 600px; left: 100px;  }
+
+	div.blackoutOverlay   { background-color: #000; color: #fff; z-index: 1000; opacity: 1; }
+	div.blackoutOverlay a { color: red; }
+
+	div#explanation   { width: 350px; z-index: 65536; position: absolute; right: 8px;    top: 8px; background-color: #eee; padding: 1em; text-align: justify; }
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<!-- <script src="jquery.min.js"></script> -->
+<!-- <script src="zepto.min.js"></script>  -->
+<script src="sopa-blackout-simulator.js"></script>
+<script>
+	$(document).ready(function() {
+		simulateBlackout({"selectors": "div", "language": "en", "percentage": 100});
+	});
+</script>
+</head>
+<body>
+	<div id="nonInfringing">This content is non-infringing.</div>
+	<div id="userGenerated">This content is user-generated.</div>
+	<div id="innocent">This is some innocent content.</div>
+	
+	<div id="explanation" class="blackoutExempt">
+	<strong>SOPA/PROTECT-IP Blackout Simulator</strong>
+	<p/>
+	The purpose of <a href="sopa-blackout-simulator.js">this client-side Javascript code</a> is to demonstrate
+	what the Internet might start to look like, if the SOPA/PROTECT-IP legislative bills
+	are passed.
+	<p/>
+	<strong>Use It</strong>
+	<p/>
+	The only hard dependency is either <a href="http://jquery.com/">jQuery</a> or <a href="http://zeptojs.com/">Zepto</a>.
+	<p/>
+	Build it into your site with one easy script tag:
+	<pre style="font-size: 95%;">
+    &lt;script src="http://vilimpoc.org/sbs.js"&gt;
+	</pre>
+	And one easy function call:
+	<pre>
+    $(document).ready(function() {
+        simulateBlackout({
+            "selectors": "div", 
+            "language": "en", 
+            "percentage": 100});
+    });
+	</pre>
+	The DOM elements matched by the "selectors" parameter will be overlaid
+	with the text you see to the left, or, depending on the "language" parameter,
+	with a translation of your choice.
+	<p/>
+	When clicked on, the overlay will then disappear.
+	<p/>
+	<strong>Rationale</strong>
+	<p/>
+	The free flow of information on the Internet is the pinnacle currency
+	of our time. If the provisions of these new laws are allowed to eliminate 
+	<a href="http://en.wikipedia.org/wiki/Section_230_of_the_Communications_Decency_Act">the
+	Section 230 safe harbor provisions of the Communications Decency Act of 1996</a>, 
+	they will cause heavy damage to the online platforms that have done much
+	to evolve our culture in the digital age.
+	<p/>
+	This will not stand, man, this aggression will not stand.
+	<p/>
+	Translations would be greatly appreciated. <a href="/contact.php">Contact me</a>
+	if you have one, or <a href="https://github.com/nuket/SOPA-PROTECT-IP-Blackout-Simulator">contribute one on Github</a>. 
+	Spanish and Chinese are desperately needed.
+	</div>
+</body>
+</html>
