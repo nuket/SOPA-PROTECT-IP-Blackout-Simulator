@@ -7,7 +7,7 @@ This is a simple client-side Javascript function that shows what SOPA and PROTEC
 > http://en.wikipedia.org/wiki/SOPA  
 > http://en.wikipedia.org/wiki/PROTECT_IP_Act  
 
-Send a letter to your Congressman or Senator:
+**Send a letter to your Congressman or Senator:**
 
 > https://action.eff.org/o/9042/p/dia/action/public/?action_KEY=8173
 
@@ -27,6 +27,6 @@ div.blackoutOverlay a { color: red; }
 >  Mutable: all CSS properties (though you probably don't want to mess 
 >           with anything other than the color and pseudo-classes)
 
-**Exempting certain DIVs from being blacked out**
+**Exempting certain DIVs from being blacked out:**
 
 > Make sure they have the CSS class "blackoutExempt" set.
